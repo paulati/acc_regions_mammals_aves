@@ -52,11 +52,11 @@ Code dependencies
 * R depedencies are listed in `setup_2024.R`
 
 * Python dependencies are:
-    * boto3
-    * botocore
-    * shutil
-    * biopython
-    * pandas
+    * `boto3`
+    * `botocore`
+    * `shutil`
+    * `biopython`
+    * `pandas`
     
 * Binaries:
   

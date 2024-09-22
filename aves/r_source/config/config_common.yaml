@@ -1,0 +1,43 @@
+environment: aws
+# environment: 'local'
+
+aws:
+
+  neutral_model:
+    #feats_base_path: /home/rstudio/2019/aves/data
+    #feats_file_name: Oryzias_latipes.ASM223467v1.96.gtf
+    #tree_base_path: /home/rstudio/2019/aves/data
+    #tree_file_name: multiz77way_galGal6.77way.nh
+    model_base_path: /home/rstudio/2019/aves/data/neutral_mod
+    #model_file_name_head: galGal6.phastCons77way
+    #model_file_name_tail: .mod
+    model_global_file_name: galGal6.phastCons77way.mod
+
+  phastConsIntersection:
+    local_base_path: /home/rstudio/2019/aves/data/phastCons/intersection
+    local_file_name_head: chr
+    local_file_name_tail: _intersection_sarcopterygii_aves.bed
+
+  acceleration:
+    split_feats:
+      local_base_path: /home/rstudio/2019/aves/data/acceleration/split_feats
+      local_file_name_head: chr
+      local_file_name_tail: _sarcopterygii_aves_split_feats.csv
+    obs_phyloP:
+      local_base_path: /home/rstudio/2019/aves/data/acceleration/obs_phyloP
+      local_file_name_head: chr
+      local_file_name_tail: _obsPhyloP.csv
+    nonparasim_phyloP:
+      local_base_path: /home/rstudio/2019/aves/data/acceleration/non_param_sim_phyloP
+      local_file_name_head: chr
+      local_file_name_tail: _nonparaPhyloP.csv
+      gff_base_path: /home/rstudio/2019/aves/data/acceleration/non_param_sim_phyloP/acc_elements_gff
+      gff_file_name_head: chr
+      gff_file_name_tail: _aar.gff
+      bed_base_path: /home/rstudio/2019/aves/data/acceleration/non_param_sim_phyloP/acc_elements_bed
+      bed_file_name_head: chr
+      bed_file_name_tail: _acc.bed
+      
+    
+
+local:

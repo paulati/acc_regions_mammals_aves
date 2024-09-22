@@ -1,0 +1,103 @@
+environment: aws
+# environment: 'aws'
+
+common:
+
+#  maf_downloader:
+#    url_base: 'http://hgdownload.cse.ucsc.edu/goldenPath/galGal6/multiz77way/maf/'
+#    file_name_head: chr
+#    file_name_tail: .maf.gz
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: aves-multiz77way
+#    remote_maf_base_path: "download/multiz77way"
+#    remote_file_name_head: chr
+#    remote_file_name_tail: .maf.gz
+    remote_chr_maf_base_path: "preparation/aves"
+
+  maf_reader:
+    maf_ref_specie: galGal6
+    maf_aln_species: #not including reference specie
+    - cotJap2
+    - melGal5
+    - tytAlb1
+    - bucRhi1
+    - anaPla1
+    - apaVit1
+    - calAnn1
+    - cucCan1
+    - chaVoc2
+    - fulGla1
+    - tauEry1
+    - opiHoa1
+    - phoRub1
+    - colLiv1
+    - lepDis1
+    - merNub1
+    - pelCri1
+    - phaCar1
+    - phaLep1
+    - pteGut1
+    - nipNip1
+    - egrGar1
+    - pygAde1
+    - aptFor1
+    - carCri1
+    - mesUni1
+    - eurHel1
+    - balPav1
+    - chlUnd1
+    - falChe1
+    - falPer1
+    - aquChr2
+    - halAlb1
+    - halLeu1
+    - corBra1
+    - corCor1
+    - acaChl1
+    - ficAlb2
+    - serCan1
+    - zonAlb1
+    - geoFor1
+    - taeGut2
+    - pseHum1
+    - gavSte1
+    - capCar1
+    - melUnd1
+    - amaVit1
+    - araMac1
+    - colStr1
+    - picPub1
+    - strCam1
+    - tinGut2
+
+#    maf_joiner:
+#    out_file_name_head:
+#    out_file_name_tail:
+
+
+local:
+
+#  maf_downloader:
+#    local_output_directory: '/paula/2019/aves/data/raw_maf'
+#
+#  aws_s3:
+
+  maf_reader:
+    local_input_directory: '/paula/2019/aves/data/raw_maf'
+    local_output_directory: '/paula/2019/aves/data/clean_maf_aves'
+
+
+aws:
+
+#  maf_downloader:
+#    local_output_directory: '/home/rstudio/2019/aves/data/raw_maf'
+#
+#  aws_s3:
+
+  maf_reader:
+    local_input_directory: '/home/rstudio/disco_tmp/aves/data/raw_maf'
+    local_output_directory: '/home/rstudio/disco_tmp/aves/data/clean_maf_aves'
+

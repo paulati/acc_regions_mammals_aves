@@ -1,0 +1,29 @@
+environment: aws
+# environment: 'aws'
+
+common:
+
+  maf_downloader:
+    url_base: 'http://hgdownload.cse.ucsc.edu/goldenPath/galGal6/multiz77way/maf/'
+    file_name_head: chr
+    file_name_tail: .maf.gz
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: aves-multiz77way
+    remote_maf_base_path: "download/multiz77way"
+    remote_file_name_head: chr
+    remote_file_name_tail: .maf.gz
+
+local:
+
+  maf_downloader:
+    local_output_directory: '/paula/2019/aves/data/raw_maf'
+
+aws:
+
+  maf_downloader:
+    local_output_directory: '/home/rstudio/disco_tmp/aves/data/raw_maf'
+
+

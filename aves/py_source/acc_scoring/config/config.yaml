@@ -1,0 +1,218 @@
+environment: 'aws_50'
+# environment: 'aws_50'
+
+local_25:
+
+  bed_extract_maf:
+    file_name_head: "chr"
+    file_name_tail: "_25_acc"
+    maf_base_path: "/paula/2019/aves/data/scoring"
+    maf_file_name_head: "chr"
+    maf_file_name_tail: ".maf"
+    bed_base_path: "/paula/2019/aves/data/acc_elements/raw/25"
+    bed_file_name_head: "chr"
+    bed_file_name_tail: ".bed"
+    index_maf_base_path: "/paula/2019/aves/data/scoring/maf_indexes"
+    index_maf_file_name_head: "index_"
+    index_target_seqname: "galGal6.chr"
+    out_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf/25"
+
+  maf_in_out_group:
+    file_name_head: "chr"
+    maf_base_path: "/paula/2019/aves/data/scoring/acc_maf/25/chr"
+    outgroup_sorted_species_file_path: "/paula/2019/aves/source/acc_scoring/config/outgroup_sorted_species.lst"
+    out_outgroup_base_path_head: "/paula/2019/aves/data/scoring/acc_maf_outgroup/25/chr"
+    ingroup_sorted_species_file_path: "/paula/2019/aves/source/acc_scoring/config/ingroup_sorted_species.lst"
+    out_ingroup_base_path_head: "/paula/2019/aves/data/scoring/acc_maf_ingroup/25/chr"
+
+  maf_consensus:
+    outgroup_consensus_base_path: "/paula/2019/aves/data/scoring/acc_maf_outgroup_consensus"
+    outgroup_consensus_file_name_head: "chr"
+    outgroup_consensus_file_name_tail: "_25_consensus.txt"
+    outgroup_consensus_threshold: 0.6
+    outgroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_outgroup/25/chr"
+    outgroup_sorted_species_consensus_file_path: "/paula/2019/aves/source/acc_scoring/config/outgroup_sorted_species_consensus.lst"
+    ingroup_consensus_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup_consensus"
+    ingroup_consensus_file_name_head: "chr"
+    ingroup_consensus_file_name_tail: "_25_consensus.txt"
+    ingroup_consensus_threshold: 0.8
+    ingroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup/25/chr"
+    ingroup_sorted_species_consensus_file_path: "/paula/2019/aves/source/acc_scoring/config/ingroup_sorted_species_consensus.lst"
+
+  maf_score:
+    ingroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup/25/chr"
+    shift_specie: "tinGut2"
+    out_file_path_head: "/paula/2019/aves/data/scoring/results/chr"
+    out_file_path_tail: "_results_25.txt"
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: "aves-multiz77way"
+    remote_maf_base_path: "download/multiz77way"
+    remote_maf_file_name_head: "chr"
+    remote_maf_file_name_tail: ".maf.gz"
+    remote_index_maf_base_path: "preparation/indexes_multiz77way"
+
+
+local_50:
+
+  bed_extract_maf:
+    file_name_head: "chr"
+    file_name_tail: "_50_acc"
+    maf_base_path: "/paula/2019/aves/data/scoring"
+    maf_file_name_head: "chr"
+    maf_file_name_tail: ".maf"
+    bed_base_path: "/paula/2019/aves/data/acc_elements/raw/50"
+    bed_file_name_head: "chr"
+    bed_file_name_tail: ".bed"
+    index_maf_base_path: "/paula/2019/aves/data/scoring/maf_indexes"
+    index_maf_file_name_head: "index_"
+    index_target_seqname: "galGal6.chr"
+    out_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf/50"
+
+  maf_in_out_group:
+    file_name_head: "chr"
+    maf_base_path: "/paula/2019/aves/data/scoring/acc_maf/50/chr"
+    outgroup_sorted_species_file_path: "/paula/2019/aves/source/acc_scoring/config/outgroup_sorted_species.lst"
+    out_outgroup_base_path_head: "/paula/2019/aves/data/scoring/acc_maf_outgroup/50/chr"
+    ingroup_sorted_species_file_path: "/paula/2019/aves/source/acc_scoring/config/ingroup_sorted_species.lst"
+    out_ingroup_base_path_head: "/paula/2019/aves/data/scoring/acc_maf_ingroup/50/chr"
+
+  maf_consensus:
+    outgroup_consensus_base_path: "/paula/2019/aves/data/scoring/acc_maf_outgroup_consensus"
+    outgroup_consensus_file_name_head: "chr"
+    outgroup_consensus_file_name_tail: "_50_consensus.txt"
+    outgroup_consensus_threshold: 0.6
+    outgroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_outgroup/50/chr"
+    outgroup_sorted_species_consensus_file_path: "/paula/2019/aves/source/acc_scoring/config/outgroup_sorted_species_consensus.lst"
+    ingroup_consensus_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup_consensus"
+    ingroup_consensus_file_name_head: "chr"
+    ingroup_consensus_file_name_tail: "_50_consensus.txt"
+    ingroup_consensus_threshold: 0.8
+    ingroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup/50/chr"
+    ingroup_sorted_species_consensus_file_path: "/paula/2019/aves/source/acc_scoring/config/ingroup_sorted_species_consensus.lst"
+
+  maf_score:
+    ingroup_maf_base_path: "/paula/2019/aves/data/scoring/acc_maf_ingroup/50/chr"
+    shift_specie: "tinGut2"
+    out_file_path_head: "/paula/2019/aves/data/scoring/results/chr"
+    out_file_path_tail: "_results_50.txt"
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: "aves-multiz77way"
+    remote_maf_base_path: "download/multiz77way"
+    remote_maf_file_name_head: "chr"
+    remote_maf_file_name_tail: ".maf.gz"
+    remote_index_maf_base_path: "preparation/indexes_multiz77way"
+
+aws_25:
+
+  bed_extract_maf:
+    file_name_head: "chr"
+    file_name_tail: "_25_acc"
+    maf_base_path: "/home/rstudio/disco_tmp/data/scoring"
+    maf_file_name_head: "chr"
+    maf_file_name_tail: ".maf"
+    bed_base_path: "/home/rstudio/2019/aves/data/acceleration/non_param_sim_phyloP/acc_elements_bed"
+    bed_file_name_head: "chr"
+    bed_file_name_tail: ".bed"
+    index_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/maf_indexes"
+    index_maf_file_name_head: "index_"
+    index_target_seqname: "galGal6.chr"
+    out_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf/25"
+
+  maf_in_out_group:
+    file_name_head: "chr"
+    maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf/25/chr"
+    outgroup_sorted_species_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/outgroup_sorted_species.lst"
+    out_outgroup_base_path_head: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup/25/chr"
+    ingroup_sorted_species_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/ingroup_sorted_species.lst"
+    out_ingroup_base_path_head: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/25/chr"
+
+  maf_consensus:
+    outgroup_consensus_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup_consensus"
+    outgroup_consensus_file_name_head: "chr"
+    outgroup_consensus_file_name_tail: "_25_consensus.txt"
+    outgroup_consensus_threshold: 0.6
+    outgroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup/25/chr"
+    outgroup_sorted_species_consensus_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/outgroup_sorted_species_consensus.lst"
+    ingroup_consensus_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup_consensus"
+    ingroup_consensus_file_name_head: "chr"
+    ingroup_consensus_file_name_tail: "_25_consensus.txt"
+    ingroup_consensus_threshold: 0.8
+    ingroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/25/chr"
+    ingroup_sorted_species_consensus_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/ingroup_sorted_species_consensus.lst"
+
+  maf_score:
+    ingroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/25/chr"
+    shift_specie: "tinGut2"
+    out_file_path_head: "/home/rstudio/2019/aves/source/results/chr"
+    out_file_path_tail: "_results_25.txt"
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: "aves-multiz77way"
+    remote_maf_base_path: "download/multiz77way"
+    remote_maf_file_name_head: "chr"
+    remote_maf_file_name_tail: ".maf.gz"
+    remote_index_maf_base_path: "preparation/indexes_multiz77way"
+
+aws_50:
+
+  bed_extract_maf:
+    file_name_head: "chr"
+    file_name_tail: "_50_acc"
+    maf_base_path: "/home/rstudio/disco_tmp/data/scoring"
+    maf_file_name_head: "chr"
+    maf_file_name_tail: ".maf"
+    bed_base_path: "/home/rstudio/2019/aves/data/acceleration/non_param_sim_phyloP/acc_elements_bed"
+    bed_file_name_head: "chr"
+    bed_file_name_tail: ".bed"
+    index_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/maf_indexes"
+    index_maf_file_name_head: "index_"
+    index_target_seqname: "galGal6.chr"
+    out_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf/50"
+
+  maf_in_out_group:
+    file_name_head: "chr"
+    maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf/50/chr"
+    outgroup_sorted_species_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/outgroup_sorted_species.lst"
+    out_outgroup_base_path_head: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup/50/chr"
+    ingroup_sorted_species_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/ingroup_sorted_species.lst"
+    out_ingroup_base_path_head: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/50/chr"
+
+
+  maf_consensus:
+    outgroup_consensus_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup_consensus"
+    outgroup_consensus_file_name_head: "chr"
+    outgroup_consensus_file_name_tail: "_50_consensus.txt"
+    outgroup_consensus_threshold: 0.6
+    outgroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_outgroup/50/chr"
+    outgroup_sorted_species_consensus_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/outgroup_sorted_species_consensus.lst"
+    ingroup_consensus_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup_consensus"
+    ingroup_consensus_file_name_head: "chr"
+    ingroup_consensus_file_name_tail: "_50_consensus.txt"
+    ingroup_consensus_threshold: 0.8
+    ingroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/50/chr"
+    ingroup_sorted_species_consensus_file_path: "/home/rstudio/2019/aves/source/acc_scoring/config/ingroup_sorted_species_consensus.lst"
+
+  maf_score:
+    ingroup_maf_base_path: "/home/rstudio/disco_tmp/data/scoring/acc_maf_ingroup/50/chr"
+    shift_specie: "tinGut2"
+    out_file_path_head: "/home/rstudio/2019/aves/source/results/chr"
+    out_file_path_tail: "_results_50.txt"
+
+  aws_s3:
+    key: 'null'
+    secret: 'null'
+    bucket_name: "aves-multiz77way"
+    remote_maf_base_path: "download/multiz77way"
+    remote_maf_file_name_head: "chr"
+    remote_maf_file_name_tail: ".maf.gz"
+    remote_index_maf_base_path: "preparation/indexes_multiz77way"
+
+

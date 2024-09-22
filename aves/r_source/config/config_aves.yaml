@@ -1,0 +1,35 @@
+environment: aws
+# environment: 'local'
+
+aws:
+  aws_s3:
+      key: 'null'
+      secret: 'null'
+      bucket_name: aves-multiz77way
+      remote_maf_base_path: preparation/aves/
+      remote_maf_file_name_head: chr
+      remote_maf_file_name_tail: _aves.maf.gz
+  maf:
+    local_base_path: /home/rstudio/disco_tmp/chr_maf
+    local_maf_file_name_head: chr
+    local_maf_file_name_tail: _aves.maf
+  
+  ss:
+    local_base_path: /home/rstudio/disco_tmp/chr_ss
+    local_ss_file_name_head: chr
+    local_ss_file_name_tail: _aves.align4d.SS
+    local_ss_global_file_name: global_align4d.SS
+
+  phastCons:
+    local_base_path: /home/rstudio/2019/aves/data/phastCons
+    local_file_name_head: chr
+    local_file_name_tail: _aves.bed
+
+local:
+  aws_s3:
+      key: 'null'
+      secret: 'null'
+      bucket_name: surface-cave
+      remote_maf_base_path: preparation/alignments/maf_species_chr/
+      remote_maf_file_name_head: chr
+      remote_maf_file_name_tail: _aves.maf.gz
